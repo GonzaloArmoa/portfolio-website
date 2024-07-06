@@ -1,17 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes, FaBars } from 'react-icons/fa';
+import logo from '../assets/logoGA.png'
 
 
 export const Header = () => {
   const [navbar, setNavbar] = useState(false)
   const Nabvar = [
     {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "Sobre Mi",
+      name: "Sobre mi",
       link: "/about",
     },
     {
@@ -19,27 +16,27 @@ export const Header = () => {
       link: "/projects",
     },
     {
-      name: "Contactos",
+      name: "Contacto",
       link: "/contact",
     },
   ];
   return (
     <>
-      <nav className="w-full h-auto bg-gray-800 lg:px-9 md:px-8 sm:px-14 px-12 py-2 shadow-md ">
+      <nav className="w-full h-auto bg-gray-800 lg:px-9 md:px-8 sm:px-12 px-10 py-3 shadow-md ">
         <div className="justify-between mx-auto lg:w-full md:items-center md:flex ">
           {/* Navbar Logo, Menu Button & Login */}
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block ">
+            <div className="flex items-center justify-between md:px-5 md:block ">
               {/* Logo section */}
-              <Link className="text-3xl text-orange-500 font-semibold tracking-[0.1rem] ">
-                Gonzalo Armoa
+              <Link>
+                <img src={logo} alt="Logo GA" className="w-16"/>
               </Link>
               {/* Menu Button section */}
-              <div className="md:hidden ">
+              <div className="md:hidden">
                 <button className="p-2 text-gray-700 rounded-md outline-none border border-transparent focus:border-gray-400 focus:border" onClick={() =>
                 setNavbar(!navbar)}>
                   {navbar ? (
-                    <FaTimes className="text-gray-400 cursor-pointer size={24}"/>
+                    <FaTimes className=" text-gray-400  cursor-pointer size={24}"/>
                   ) : (
                     <FaBars className="text-gray-400 cursor-pointer size={24}"/>
                   )}
@@ -56,7 +53,7 @@ export const Header = () => {
                 <li key={index}>
                   <Link
                     to={item.link}
-                    className=" text-gray-400 tex-[1.5rem] font-medium tracking-wider hover:text-gray-200 ease-out duration-700  "
+                    className=" text-gray-500 tex-[1.5rem] font-medium tracking-wider hover:text-gray-50 ease-out duration-700 focus:text-orange-500  "
                   >
                     {item.name}
                   </Link>
