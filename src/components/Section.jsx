@@ -40,8 +40,8 @@ export const Section = () => {
           </ul>
         </div>
 
-        {/* Sections*/}
-        <div className="mt-1 relative w-full h-96 border-double border-4 border-gray-600 rounded-md bg-orange-50 p-10 pt-16">
+        {/* Description */}
+        <div className="relative w-full h-[800px] border-double border-4 border-gray-600 rounded-md bg-orange-50 pt-10">
           <Outlet />
         </div>
       </div>

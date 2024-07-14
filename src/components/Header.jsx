@@ -5,7 +5,7 @@ export const Header = () => {
 
   return (
     <>
-    <div className="bg-lime-200 p-3">
+    <div className="p-3">
         {/* Logo section */}
         <Link>
           <img src={logo} alt="Logo GA" className="w-16" />

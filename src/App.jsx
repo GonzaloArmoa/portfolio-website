@@ -7,7 +7,7 @@ function App() {
     <>
           <div className="h-svh bg-lime-200">
          <Header />
-         <div className="mt-16 flex flex-wrap  justify-evenly">
+         <div className="flex flex-wrap  justify-evenly w-5/6 mx-auto">
           <Aside />
           <Section/>
           </div>
