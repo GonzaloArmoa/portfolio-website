@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 import pImg1 from "../assets/proyectsImg/no.png";
+import { ProjectsCard } from "../components/ProjectsCard";
+import { Pagination } from "../components/Pagination";
 
 export const ProjectsPage = () => {
   const Projects = [
@@ -69,6 +73,12 @@ export const ProjectsPage = () => {
       url: "/about",
     },
   ];
+
+  const [pagina, setPagina] = useState(1);
+  const [porPagina] = useState(4);
+
+  const maximo = Projects.length / porPagina;
+
   return (
     <>
       <div>
@@ -77,17 +87,14 @@ export const ProjectsPage = () => {
         {/* Dibuja la lista de Proyectos */}
         <div className="mt-4">
           <ul className="flex flex-wrap gap-12 justify-center">
-            {Projects.map((item, index) => (
-              <li
-                className=" w-48 border-double  border-4 border-gray-600 rounded-md text-gray-900 tex-[1.5rem] tracking-wider hover:font-bold duration-700 focus:font-bold focus:border-black focus:z-10"
-                key={index}
-              >
-                <img className="h-46" src={item.image} alt={item.name} />
-                <p>{item.name}</p>
-                <p> {item.language}</p>
-              </li>
+            {Projects.slice(
+              (pagina - 1) * porPagina,
+              (pagina - 1) * porPagina + porPagina
+            ).map((item, index) => (
+              <ProjectsCard item={item} index={index} key={index} />
             ))}
           </ul>
+          <Pagination pagina={pagina} setPagina={setPagina} maximo={maximo} />
         </div>
       </div>
     </>
