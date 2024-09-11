@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import pImg1 from "../assets/proyectsImg/no.png";
+import UnsterImage from "../assets/proyectsImg/unsterblichMainImage.png";
 import { ProjectsCard } from "../components/ProjectsCard";
 import { Pagination } from "../components/Pagination";
 
@@ -9,7 +10,7 @@ export const ProjectsPage = () => {
     {
       name: "Cerveceria Unsterblich",
       language: "Wordpress",
-      image: pImg1,
+      image: UnsterImage,
       url: "//unsterblich.site",
     },
     {
