@@ -15,8 +15,8 @@ const prevPage = () => {
 
   return (
     <div className='m-10 flex justify-between'>
-        <button disabled={pagina === 1} onClick={prevPage}>Anterior</button>
-        <button disabled={pagina === maximo || pagina > maximo} onClick={nextPage}>Siguiente</button>
+        <button disabled={pagina === 1} onClick={prevPage} className='disabled:text-transparent'>Anterior</button>
+        <button disabled={pagina === maximo || pagina > maximo} onClick={nextPage} className='disabled:text-transparent'>Siguiente</button>
     </div>
   )
   
