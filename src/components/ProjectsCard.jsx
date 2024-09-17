@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 export const ProjectsCard = ({item, index}) => {
   return (
     <li
-    className="mx-4 w-full text-gray-900 tex-[1.5rem] tracking-wider hover:font-bold hover:scale-125 duration-700 focus:font-bold focus:border-black focus:z-10 bg-white"
+    className="mx-4 w-full bg-white text-gray-900 tex-[1.5rem] tracking-wider hover:font-bold hover:scale-125 duration-500"
     key={index}
   >
 <a className='block border-2 border-black rounded-lg p-1' href={item.url} target='_blank'>

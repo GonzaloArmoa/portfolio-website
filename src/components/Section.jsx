@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { Outlet } from "react-router-dom";
 
@@ -13,16 +13,21 @@ export const Section = () => {
 
 
         {/* TopLinks*/}
-        <div className="mt-4">
+        <div className="mt-4 mb-1">
           <ul className="flex gap-x-10 justify-center">
             {Sections.map((item, index) => (
               <li className="" key={index}>
-                <Link
+                <NavLink
+                  className={({ isActive }) =>
+                    `relative px-3 py-1.5 pb-2.5 bg-orange-50 border-double border-4 border-gray-600 rounded-md text-gray-900 border-b-0 tracking-wider
+           ${isActive ? 'rounded-b-none font-bold z-10' : ''
+                    }
+            `
+                  }
                   to={item.link}
-                  className="pb-2.5 relative bg-orange-50 px-3 py-1 border-double  border-4 border-gray-600 rounded-md text-gray-900 tex-[1.5rem] border-b-0 rounded-b-none font-medium tracking-wider hover:font-bold duration-700 active:font-bold active:border-black active:z-10"
                 >
                   {item.name}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
