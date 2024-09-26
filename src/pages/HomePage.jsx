@@ -1,11 +1,12 @@
 import { IconsBar } from "../components/IconsBar"
+import { ProjectsCards } from "../components/Projects"
 
 export const HomePage = () => {
   return (
     <>
       <div className="about">DESCRIPCION SOBRE MI</div>
       <div className="contact">MEDIOS DE CONTACTO</div>
-      <div className="projects">PROYECTOS</div>
+      <ProjectsCards/>
       <IconsBar/>
 
     </>

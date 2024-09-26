@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Projects } from "../constants/projectsList";
 
 export const ProjectsCard = ({item, index}) => {
   return (

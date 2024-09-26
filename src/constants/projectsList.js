@@ -23,16 +23,16 @@ export const Projects = [
       url: "https://emiliacole-zghq.onrender.com",
     },
     {
+      name: "Mercado Liebre",
+      language: "HTML + CSS + JS",
+      image: MercadoLiebre,
+      url: "https://mercado-liebre-51s2.onrender.com",
+    },
+    {
       name: "Rest Menu",
       language: "HTML + CSS + JS",
       image: RestMenu,
       url: "https://la-carta-menu.onrender.com",
-    },
-    {
-      name: "Mercado Liebre CRUD",
-      language: "HTML + CSS + JS",
-      image: MercadoLiebre,
-      url: "https://mercado-liebre-51s2.onrender.com",
     },
     {
       name: "Sip n' Ship",
