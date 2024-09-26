@@ -8,3 +8,27 @@
         animation-play-state: paused;
     }
 }
+
+.banner-skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    background: linear-gradient(90deg, #fef7ed, transparent);
+    width: 60px;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(90deg, rgba(254, 247, 237, 1) 0%, rgba(254, 247, 237, 0.5) 80%, rgba(254, 247, 237, 0) 100%);
+}
+
+.banner-skills::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(90deg, #fef7ed, transparent);
+    width: 60px;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(260deg, rgba(254, 247, 237, 1) 0%, rgba(254, 247, 237, 0.5) 80%, rgba(254, 247, 237, 0) 100%);
+}
