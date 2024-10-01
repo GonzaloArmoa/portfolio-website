@@ -3,7 +3,7 @@ import { Projects } from "../constants/projectsList";
 
 export const ProjectsCard = ({item, index}) => {
   return (
-    <li
+    <div
     className="mx-4 w-full bg-white text-gray-900 tex-[1.5rem] tracking-wider hover:font-bold hover:scale-125 duration-500"
     key={index}
   >
@@ -14,7 +14,7 @@ export const ProjectsCard = ({item, index}) => {
 <p> {item.language}</p>
 </div>
 </a>
-  </li>
+  </div>
   )
 }
 

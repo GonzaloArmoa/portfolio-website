@@ -19,14 +19,14 @@ export const ProjectsPage = () => {
 
         {/* Dibuja la lista de Proyectos */}
         <div className="h-full flex flex-col justify-between px-8 py-12">
-          <ul className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
             {Projects.slice(
               (pagina - 1) * porPagina,
               (pagina - 1) * porPagina + porPagina
             ).map((item, index) => (
               <ProjectsCard item={item} index={index} key={index} />
             ))}
-          </ul>
+          </div>
           <Pagination pagina={pagina} setPagina={setPagina} maximo={maximo} />
         </div>
       </div>

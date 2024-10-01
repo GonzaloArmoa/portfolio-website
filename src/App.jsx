@@ -5,9 +5,9 @@ import { Section } from "./components/Section";
 function App() {
   return (
     <>
-          <div className="h-svh bg-lime-200">
+      <div className=" h-screen bg-lime-200">
          <Header />
-         <div className="flex flex-wrap gap-x-6 justify-evenly w-5/6 mx-auto">
+          <div className="flex flex-col gap-x-6 justify-evenly mx-auto md:flex-row">
           <Aside />
           <Section/>
           </div>
