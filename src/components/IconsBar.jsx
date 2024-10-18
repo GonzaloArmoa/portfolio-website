@@ -11,8 +11,8 @@ export const IconsBar = () => {
     <div className="flex justify-around flex-wrap">
 
         {Tecnos.map((item, index) => (
-          <div key={index} className="hover:scale-125 hover:font-bold">
-            <img className="m-auto py-2 max-w-none max-h-16" src={item.image} alt={item.name} />
+          <div key={index} className="hover:scale-125 hover:font-bold mx-2 md:mx-3">
+            <img className="m-auto max-w-none max-h-16" src={item.image} alt={item.name} />
             <p className="text-xs text-center mb-3">{item.name}</p>
           </div>
         ))}

@@ -1,7 +1,5 @@
 import { Projects } from "../constants/projectsList";
-import { Fade, Slide } from "react-awesome-reveal";
-
-
+import { Fade  } from "react-awesome-reveal";
 
 
 export const ProjectsCards = () => {

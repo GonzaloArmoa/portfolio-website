@@ -9,7 +9,7 @@ export const Section = () => {
   return (
     <>
       {/* Section > TopLinks & Description*/}
-      <div className="px-6 sm:flex-row-reverse sm:flex-nowrap   lg:flex lg:flex-wrap lg:flex-col">
+      <div className="sm:flex-row-reverse sm:flex-nowrap my-6 lg:flex lg:flex-wrap lg:flex-col">
 
 
         {/* TopLinks*/}
@@ -34,7 +34,7 @@ export const Section = () => {
         </div> */}
 
         {/* Description */}
-        <div className="relative w-full max-h-[800px] border-double border-4 border-gray-600 rounded-md bg-orange-50 pt-10">
+        <div className=" w-full border-double border-4 border-gray-600 rounded-md bg-orange-50 pt-10">
           <Outlet />
         </div>
       </div>
