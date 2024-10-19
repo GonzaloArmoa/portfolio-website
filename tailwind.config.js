@@ -10,7 +10,9 @@ export default {
       colors: {
         'fondoPrincipal': '#6A801C'
       },
+      
+      }
+
   },
   plugins: [],
-}
 }
