@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="bg-lime-200 px-6">
          <Header />
-          <div className="flex flex-col gap-x-6 justify-evenly mx-auto md:flex-row">
+          <div className="flex flex-col gap-x-6 justify-evenly mx-auto md:flex-row items-center md:items-start">
           <Aside />
           <Section/>
           </div>
