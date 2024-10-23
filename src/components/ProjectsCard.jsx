@@ -1,20 +1,26 @@
 import PropTypes from 'prop-types'
-import { Projects } from "../constants/projectsList";
+import { Fade } from 'react-awesome-reveal'
 
 export const ProjectsCard = ({item, index}) => {
   return (
-    <div
-    className="mx-4 w-full bg-white text-gray-900 tex-[1.5rem] tracking-wider hover:font-bold hover:scale-125 duration-500"
-    key={index}
-  >
-<a className='block border-2 border-black rounded-lg p-1' href={item.url} target='_blank'>
-<img className="h-14 w-full" src={item.image} alt={item.name} />
-<div className="px-10 flex flex-row justify-between">
-<p>{item.name}</p>
-<p> {item.language}</p>
+<a href={item.url} target='_blank'>
+
+<div className=" text-white shadow-md rounded-lg overflow-hidden relative group ">
+
+
+  <img className="backdrop:w-full max-w-[300px] max-h-44 object-cover rounded-lg " src={item.image} alt={item.name} />
+
+  {/* Seccion Oculta */}
+  <div className="top-[0] opacity-100 absolute left-0 lg:top-[-100%] lg:opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-black/60 group-hover:backdrop-blur-[2px] duration-300">
+    <div className="space-y-5">
+      <Fade duration={1500}>
+        <h2 className="font-bold text-xl">{item.name}</h2>
+        <h2>{item.language}</h2>
+      </Fade>
+    </div>
+  </div>
 </div>
 </a>
-  </div>
   )
 }
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Projects } from "../constants/projectsList";
+import { ProjectsList } from "../constants/projectsList";
 import { ProjectsCard } from "../components/ProjectsCard";
 import { Pagination } from "../components/Pagination";
 
@@ -8,9 +8,9 @@ import { Pagination } from "../components/Pagination";
 export const ProjectsPage = () => {
 
   const [pagina, setPagina] = useState(1);
-  const [porPagina] = useState(4);
+  const [porPagina] = useState(6);
 
-  const maximo = Projects.length / porPagina;
+  const maximo = ProjectsList.length / porPagina;
 
   return (
     <>
@@ -19,8 +19,8 @@ export const ProjectsPage = () => {
 
         {/* Dibuja la lista de Proyectos */}
         <div className="h-full flex flex-col justify-between px-8 py-12">
-          <div className="flex flex-wrap gap-4 justify-center">
-            {Projects.slice(
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:text-center xl:grid-cols-3 place-items-center gap-10">
+            {ProjectsList.slice(
               (pagina - 1) * porPagina,
               (pagina - 1) * porPagina + porPagina
             ).map((item, index) => (

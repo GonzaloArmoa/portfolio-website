@@ -9,7 +9,7 @@ import Pimienta from "../assets/proyectsImg/no.png";
 import Craftsy from "../assets/proyectsImg/craftsyMainImage.png";
 
 
-export const Projects = [
+export const ProjectsList = [
     {
       name: "Cerveceria Unsterblich",
       language: "Wordpress",
