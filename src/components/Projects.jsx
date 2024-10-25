@@ -20,7 +20,7 @@ export const Projects = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-end mt-2 items-center md:-mt-6 lg:m-3">
+        <div className="flex justify-end mt-2 items-center lg:-mt-6 xl:m-3 ">
         <a href='projects' className=" text-sm text-black font-semibold underline mr-1 "> TODOS MIS PROYECTOS </a><TiArrowRightThick/>
         </div>
       </div>

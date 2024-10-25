@@ -6,7 +6,7 @@ import { Projects } from "../components/Projects"
 export const HomePage = () => {
   return (
     <>
-    <div className="px-6">
+    <div className="w-full px-6 pt-14">
       <About/>
       <Projects/>
       <IconsBar/>
