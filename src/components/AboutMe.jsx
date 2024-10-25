@@ -3,7 +3,7 @@ import { Fade, Zoom  } from "react-awesome-reveal";
 export const About = () => {
     return (
         <>
-            <div className="max-w-[1000px] text-center">
+            <div className="text-center">
             <h3 className="font-bold text-2xl mb-4">Acerca de mi ...</h3>
             <Fade duration={1600}>
             <Zoom duration={600}>

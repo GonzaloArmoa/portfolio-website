@@ -10,7 +10,7 @@ export const Section = () => {
 
 
         {/* Description */}
-        <div className=" w-full border-double border-4 border-gray-600 rounded-md bg-orange-50">
+        <div className=" w-full border-double border-4 border-gray-600 rounded-md bg-orange-50 max-w-[1200px] ">
           <Outlet />
         </div>
       </div>

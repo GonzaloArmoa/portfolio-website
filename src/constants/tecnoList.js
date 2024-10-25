@@ -11,9 +11,14 @@ import Node from "../assets/iconsTecnos/node.png";
 import Sql from "../assets/iconsTecnos/mysql.png";
 import Mongo from "../assets/iconsTecnos/mongo.png";
 import Vite from "../assets/iconsTecnos/vite.png";
+import Wps from "../assets/iconsTecnos/wps.png";
 
 
 export const Tecnos = [
+  {
+    name: "WordPress",
+    image: Wps,
+  },
     {
       name: "HTML",
       image: Html,
